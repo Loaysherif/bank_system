@@ -1,7 +1,8 @@
 class BankAcount {
   String accountID;
   double balance;
-  BankAcount(this.accountID) : balance = 0;
+  BankAcount(this.accountID, this.balance);
+  BankAcount.id(this.accountID) : balance = 0;
   void deposit(double amount) {
     if (amount > 0) {
       balance += amount;
@@ -31,11 +32,18 @@ class BankAcount {
 }
 
 void main() {
-  BankAcount myAccount = BankAcount("158472");
+  BankAcount myAccount = BankAcount.id("158472");
   myAccount.deposit(100);
   myAccount.withdraw(30);
   myAccount.withdraw(100);
   myAccount.deposit(-100);
   myAccount.withdraw(-100);
   myAccount.displayAccountInfo();
+  BankAcount myAccount2 = BankAcount("123456", 3000);
+  myAccount2.deposit(100);
+  myAccount2.withdraw(30);
+  myAccount2.withdraw(100);
+  myAccount2.deposit(-100);
+  myAccount2.withdraw(-100);
+  myAccount2.displayAccountInfo();
 }
