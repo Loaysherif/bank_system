@@ -29,13 +29,24 @@ The code performs the following:
    - The account information is displayed.
 
 ## Example Output
- BankAcount myAccount = BankAcount("158472");
+ BankAcount myAccount = BankAcount.id("158472");
   myAccount.deposit(100);                    Deposited: 100.0
   myAccount.withdraw(30);                    Withdrawn: 30.0
   myAccount.withdraw(100);                   Insufficient balance!
   myAccount.deposit(-100);                   Invalid deposite amount!
   myAccount.withdraw(-100);                  Invalid withdrawal amount
   myAccount.displayAccountInfo();            Acount ID: 158472  Current balance: 70.0
+ BankAcount myAccount = BankAcount("123456" , 3000);
+  myAccount.deposit(100);                    Deposited: 100.0
+  myAccount.withdraw(30);                    Withdrawn: 30.0
+  myAccount.withdraw(100);                   Withdrawn: 100.0
+  myAccount.deposit(-100);                   Invalid deposite amount!
+  myAccount.withdraw(-100);                  Invalid withdrawal amount
+  myAccount.displayAccountInfo();            Acount ID: 123456  Current balance: 2970.0
+![image](https://github.com/user-attachments/assets/ff4d63a3-92ed-445c-9516-b3c1560eeb87)
+![image](https://github.com/user-attachments/assets/95f51350-9b4f-43a3-9449-23a546e78743)
+![image](https://github.com/user-attachments/assets/5586eb2d-3503-4b95-9afc-f09c97e05858)
 
-![image](https://github.com/user-attachments/assets/6b849e2b-541c-424e-bc72-2f0508c3bccc)
-![image](https://github.com/user-attachments/assets/0d73211b-9327-4f15-81ec-9f4aef0662a0)
+
+
+
