@@ -1,17 +1,19 @@
-class BankAcount {
+class BankAccount {
   String accountID;
   double balance;
-  BankAcount(this.accountID, this.balance);
-  BankAcount.id(this.accountID) : balance = 0;
+  BankAccount(this.accountID, this.balance);
+  BankAccount.id(this.accountID) : balance = 0;
+// put money in the account (deposit)
   void deposit(double amount) {
     if (amount > 0) {
       balance += amount;
       print("Deposited: $amount");
     } else {
-      print("Invalid deposite amount!");
+      print("Invalid deposit amount!");
     }
   }
 
+// Take money from the account (withdraw)
   void withdraw(double amount) {
     if (amount > 0) {
       if (amount <= balance) {
@@ -25,21 +27,22 @@ class BankAcount {
     }
   }
 
+// display account data : ID - Balance
   void displayAccountInfo() {
-    print("Acount ID: $accountID");
+    print("Account ID: $accountID");
     print("Current balance: $balance");
   }
 }
 
 void main() {
-  BankAcount myAccount = BankAcount.id("158472");
+  BankAccount myAccount = BankAccount.id("158472");
   myAccount.deposit(100);
   myAccount.withdraw(30);
   myAccount.withdraw(100);
   myAccount.deposit(-100);
   myAccount.withdraw(-100);
   myAccount.displayAccountInfo();
-  BankAcount myAccount2 = BankAcount("123456", 3000);
+  BankAccount myAccount2 = BankAccount("123456", 3000);
   myAccount2.deposit(100);
   myAccount2.withdraw(30);
   myAccount2.withdraw(100);
