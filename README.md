@@ -29,7 +29,6 @@ The code performs the following:
    - The account information is displayed.
 
 ## Screenshots from code
-![image](https://github.com/user-attachments/assets/2bc83c00-af47-4ecb-b5c8-cf01aa463065)
 ![image](https://github.com/user-attachments/assets/fe767a25-50a7-43ed-834f-20a8d509faa9)
 
 
